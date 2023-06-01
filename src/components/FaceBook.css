@@ -24,6 +24,20 @@ img {
     margin: 0.2rem;
 }
 
+.facebook__buttons {
+    display: flex;
+}
+
+.facebook__buttons button {
+    padding: 1rem;
+    font-size: 1.12rem;
+    margin-left: 1rem;
+}
+
+.facebook__buttons button:hover {
+    cursor: pointer;
+}
+
 .profile-details {
     text-align: left;
     margin-left: 0.5rem;

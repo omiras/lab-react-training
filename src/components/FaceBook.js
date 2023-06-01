@@ -1,5 +1,6 @@
 // En la variable profiles cargamos un array de objetos, pues son los datos que estan contenidos en berlin.json
 
+import { useState } from 'react';
 import profiles from '../data/berlin.json';
 import './FaceBook.css';
 
@@ -16,17 +17,29 @@ const countryList = initialCountryList.filter(
 console.log(countryList);
 
 export default function FaceBook() {
+  // estado de la app: país seleccionado
+  const [selectedCountry, setSelectedCountry] = useState('USA');
+
+  const handleClick = (country) => {
+    console.log(country);
+    setSelectedCountry(country);
+  };
+
   const buttons = (
     <div>
-      {' '}
       {countryList.map((country) => (
-        <button> {country} </button>
-      ))}{' '}
+        <button onClick={() => handleClick(country)}> {country} </button>
+      ))}
     </div>
   );
 
   const listProfiles = profiles.map((profile) => (
-    <li>
+    <li
+      style={{
+        backgroundColor:
+          profile.country == selectedCountry ? 'turquoise' : 'white',
+      }}
+    >
       <div className="img-container">
         <img src={profile.img} alt={profile.firstName} />
       </div>
@@ -48,7 +61,7 @@ export default function FaceBook() {
   ));
   return (
     <div>
-      {buttons}
+      <div className="facebook__buttons">{buttons}</div>
       <ul> {listProfiles} </ul>
     </div>
   );

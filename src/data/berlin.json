@@ -1,6 +1,6 @@
 [
-  {"firstName": "Aaron", "lastName": "Newell", "country": "England", "img": "https://i.imgur.com/CFgX3Xx.png", "isStudent": false},
-  {"firstName": "Alec", "lastName": "Budd", "country": "USA", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550165485/Ironclass/IH_Jan1950.jpg.jpg", "isStudent": true},
+  {"firstName": "Aaron", "lastName": "Newell", "country": "England", "img": "https://oscarm.tinytake.com/media/1489319?filename=1685612783338_TinyTake01-06-2023-11-46-20_638212095824013450.png&sub_type=thumbnail_preview&type=attachment&width=320&height=428", "isStudent": false},
+  {"firstName": "Alec", "lastName": "Budd", "country": "USA", "img": "https://oscarm.tinytake.com/media/148932b?filename=1685612833576_TinyTake01-06-2023-11-47-10_638212096330073280.png&sub_type=thumbnail_preview&type=attachment&width=452&height=606", "isStudent": true},
   {"firstName": "Alexander", "lastName": "Burdett", "country": "England", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550166990/Ironclass/alexander.jpeg.jpg", "isStudent": true},
   {"firstName": "Amelia", "lastName": "Chorng Ua", "country": "Malaysia", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550168765/Ironclass/IH_Jan1952.jpg.jpg", "isStudent": true},
   {"firstName": "André", "lastName": "Sebastian", "country": "Germany", "img": "http://res.cloudinary.com/djyjdargg/image/upload/v1550164358/Ironclass/IH_Jan1928.jpg.jpg", "isStudent": true},
