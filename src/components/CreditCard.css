@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 16px;
+    width: 200px;
+}
+
+.card--numbers {
+    text-align: center;
+}
+
+.logo--container {
+    text-align: end;
+}
+
+.card--logo {
+    width: 50px;
+}

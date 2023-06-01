@@ -1,12 +1,20 @@
-import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import BoxColor from './components/BoxColor';
+import CreditCard from './components/CreditCard';
+import LikeButton from './components/LikeButton';
+import FaceBook from './components/FaceBook';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       <h1>Ejercicio React</h1>
+      <FaceBook />
+      <LikeButton />
+      <LikeButton />
+      <LikeButton />
+
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
       <Greetings lang="es">Marcos</Greetings>
@@ -34,6 +42,31 @@ function App() {
         <Random min={1} max={6} />
         <Random min={1} max={100} />
       </div>
+
+      <BoxColor r={255} g={0} b={0} />
+      <BoxColor r={128} g={255} b={0} />
+
+      <CreditCard
+        type="Master Card"
+        number="0123456789010995"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="N26"
+        owner="Maxence Bouret"
+        bgColor="#eeeeee"
+        color="#222222"
+      />
+
+      <CreditCard
+        type="Visa"
+        number="0123456789016984"
+        expirationMonth={12}
+        expirationYear={2019}
+        bank="Name of the Bank"
+        owner="Firstname Lastname"
+        bgColor="#ddbb55"
+        color="white"
+      />
     </div>
   );
 }
