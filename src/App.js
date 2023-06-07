@@ -5,11 +5,13 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import LikeButton from './components/LikeButton';
 import FaceBook from './components/FaceBook';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       <h1>Ejercicio React</h1>
+      <RGBColorPicker />
       <FaceBook />
       <LikeButton />
       <LikeButton />
